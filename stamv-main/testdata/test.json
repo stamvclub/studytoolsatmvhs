@@ -1,0 +1,29 @@
+{
+    "title":"THIS IS A TITLE",
+    "description": "lorem ipskfhasdkfh;askdjf;lkdsajfldj;a",
+    "questions": [
+        {
+            "term": "Term",
+            "definitions": [
+                "definition1"
+            ]
+        },
+        {
+            "term": "This is a term",
+            "definitions": [
+                "this is a definition"
+            ]
+        },
+        {
+            "term": "test",
+            "definitions": [
+                "this is a definition"
+            ]
+        }
+    ],
+    "id": 1234,
+    "permissions": {
+        "canView": [],
+        "canEdit": []
+    }
+}

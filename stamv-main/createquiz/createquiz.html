@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Quiz</title>
+
+  <!-- <link rel="stylesheet" href="" media="all"> -->
+  <link rel="stylesheet" href="createquiz.css">
+
+</head>
+
+<!-- this is the top menu -->
+
+<body>
+  <div id="header" class="menu">
+    <img  src="../images/createquizfixed.png" alt="">
+    <a href="/stamv/CreateQuiz.html" style="color:rgb(252, 163, 17)">Tools</a>
+    <a href="/stamv/calendar.html">Calendar</a>
+    <a class="active" href="/stamv/about.html">About</a>
+    <a href="/stamv/index.html">Home</a>
+  </div>
+  <div class="header"> </div>
+
+  <br><br>
+  <h2 style="text-align: center;">Create a Quiz</h2>
+  <div id="interactiveArea">
+    <div id="quizHere">
+      <!-- quiz name  -->
+      <label for="quizName">Quiz Name</label>
+      <input type="text" placeholder="Name here" name="quizName" id="quizName">
+      <!-- visibility -->
+      <div id="visibility">
+        <p>Visibility: </p>
+        <select name="visiblityDropdown" id="visiblityDropdown">
+          <option value="Public">Public</option>
+          <option value="Private">Private</option>
+        </select>
+      </div>
+      <!-- description -->
+      <label for="quizDescription" onkeypress="textAreaUpdater(this)">Description: </label>
+      <textarea type="text" placeholder="Description here" name="quizDescription" id="quizDescription"> </textarea>
+      <hr id="break1">
+    </div>
+
+
+    <div id="listOfQuestions">
+
+    </div>
+    <div id="preventSizeChange">
+      <button id="addQuestion">
+        +
+      </button>
+    </div>
+    <button id="saveQuestions">
+      Save changes
+    </button>
+  </div>
+  
+  
+  <div id="footerWrapper">
+    <footer>
+      <p>Study Tools @ MVHS | By students, for students</p>
+
+    </footer>
+  </div>
+
+
+  <script src="createquiz.js"></script>
+  <script src="utils.js"></script>
+</body>
+
+</html>

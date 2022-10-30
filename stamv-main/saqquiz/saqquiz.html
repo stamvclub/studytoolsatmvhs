@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="saqquiz.css" />
+  <link rel="stylesheet" href="../css/general.css" />
+</head>
+
+<body>
+  <div id="header" class="menu">
+    <img src="../images/createquizfixed.png" alt="" />
+    <a href="/stamv/CreateQuiz.html" style="color: rgb(252, 163, 17)">Tools</a>
+    <a href="/stamv/calendar.html">Calendar</a>
+    <a class="active" href="/stamv/about.html">About</a>
+    <a href="/stamv/index.html">Home</a>
+  </div>
+  <div id="info">
+    <h2 id="title"></h2>
+    <p id="description"></p>
+  </div>
+  <div id="interactiveArea">
+    <div id="centralArea">
+      <div id="termArea">
+        <h1 id="question">Logarithm</h1>
+
+        <hr id="cardSplit" />
+        <p id="typeLabel1">TERM</p>
+      </div>
+      <div id="verticalSplit">
+        <div id="answersContainer">
+          <div>
+            <input type="text" class="answers" id="answerBox" placeholder="A quan..." name="answer1">
+            <div class="inlineUnderAnswer">
+              <p id="typeLabel2" style="float:left" >DEFINITION</p>
+              <button style="float:right" id="dontKnowBtn" onclick="revealAnswers(shownAnswers)">DONT KNOW</button>
+            </div>
+          </div>
+
+          <!-- im not sure how to implement this stuff -->
+          <!--           
+            <input type="text" class = "answers" id="answer" placeholder="y = logb" name="answer2">
+            <div class="inlineUnderAnswer">
+              <p style="float:left">EQUATION</p>
+              <button style="float:right" id="dontKnowBtn" onclick="revealAnswers(shownAnswers)">DONT KNOW</button>
+            </div> -->
+
+          <button id="checkBtn" disabled=true>SUBMIT</button>
+        </div>
+        <div id="imageContainer">
+          <img class="scaledImage"
+            src="https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A80525656f38f5a7a15ab4dba8c4a08637c010ea86ee45edc22fcf78c%2BIMAGE_TINY%2BIMAGE_TINY.1"
+            alt="a" />
+        </div>
+      </div>
+
+      <div id="progressAreaContainer">
+        <label>Progress:</label>
+        <progress id="progress" value="0" max="0"></progress>
+      </div>
+    </div>
+    <div id="answerWithDefinitionArea">
+      <label class="unselectable" for="isDefinition">Answer with definition</label>
+      <input type="checkbox" id="isDefinition" onclick="definitionToggle(this)" checked>
+
+
+    </div>
+  </div>
+
+  <div id="footerWrapper">
+    <footer>
+      <p>Study Tools @ MVHS | By students, for students</p>
+    </footer>
+  </div>
+
+  <script src="saqquiz.js"></script>
+</body>
+
+</html>

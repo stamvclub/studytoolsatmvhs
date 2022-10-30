@@ -1,0 +1,86 @@
+body{
+    font-family: Roboto;
+    font-weight: 300;
+    margin:0;
+}
+h1, h3 {
+    color: #4B4949;
+    text-align: center;
+}
+h2 {
+    color: #4B4949;
+}
+p {
+    color: #000000;
+    line-height: 1.8 ;
+}
+
+
+#header {
+    background: url('../images/main.png') no-repeat center top;
+    background-attachment: fixed;
+    background-size: min(100vw);
+    height: 30vw;
+    padding: 0;
+    margin: 0;
+}​
+
+/* menu bar */
+.menu {
+    overflow: hidden;
+    background-color: #333;
+}     
+.menu a{
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;    
+}
+/* image specifications */
+img{
+    width: 320px;
+    height: 220px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-origin:padding-box;
+    background-position:center;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #E5E5E5;
+    color: #FFFFFF;
+}
+
+.card {
+
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    align-self: center;
+}
+
+.verticalBar {
+    /* width: 1px;  */
+    /* height: 20px;  */
+    display: inline-block;
+    font-family:'Times New Roman', Times, serif; 
+    color:rgb(252, 163, 17); 
+    font-size: 30px;
+}
+
+#center {
+    margin: auto;
+    width:  90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
